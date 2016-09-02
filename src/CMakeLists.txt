@@ -59,7 +59,6 @@ SET(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_RPATH};/opt/libhiredis_0_13/lib;/opt/lo
 
 message(STATUS "C++ compilation flags: ${CMAKE_CXX_FLAGS_RELEASE}")
 
-set(LOG4CPP_CUSTOM_INSTALL_PATH "/opt/log4cpp1.1.1")
 set(JSONC_CUSTOM_INSTALL_PATH "/opt/json-c-0.12")
 set(PFRING_CUSTOM_INSTALL_PATH "/opt/pf_ring_6.0.3")
 set(LIBPCAP_CUSTOM_INSTALL_PATH "/opt/libpcap_1.7.4")
