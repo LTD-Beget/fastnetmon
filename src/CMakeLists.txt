@@ -215,12 +215,7 @@ if (ENABLE_LUA_SUPPORT)
 
     add_definitions(-DENABLE_LUA_HOOKS)
 
-    set(LUAJIT_CUSTOM_INSTALL_PATH "/opt/luajit_2.0.4")
-
-    link_directories("${LUAJIT_CUSTOM_INSTALL_PATH}/lib")
-    include_directories("${LUAJIT_CUSTOM_INSTALL_PATH}/include")
-
-    find_library(LUAJIT_LIBRARY_PATH NAMES luajit-5.1 PATHS "${LUAJIT_CUSTOM_INSTALL_PATH}/lib" NO_DEFAULT_PATH)
+    find_library(LUAJIT_LIBRARY_PATH NAMES luajit-5.1)
 
     if (NOT LUAJIT_LIBRARY_PATH) 
         message(FATAL_ERROR "Could not find luajit library")
